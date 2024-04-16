@@ -1,0 +1,27 @@
+.quick_add_to_cart input.minus,
+.quick_add_to_cart input.plus{
+	margin-top:0px;
+}
+.quick_add_to_cart{
+	margin-top:10px;
+}
+.quick_buy_page .title-wrapper{
+	min-height:70px;
+}
+.quick_add_to_cart .quantity.buttons_added{
+	margin-right:0px;
+}
+.gc_discount_hints{
+	position: fixed;
+    bottom: 0px;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    background-color: #A37B1F;
+    color: #fff;
+	padding:5px 10px;
+}
+.gc_discount_hints ul,
+.gc_discount_hints li{
+	margin-bottom:0px;
+}

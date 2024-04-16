@@ -1,0 +1,431 @@
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    #field_1_62 {
+        color: #E85E5E;
+        font-weight: bold;
+    }
+
+    /* 標題文字 */
+    #mobel_field_1_13_1 {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-rows: 15px;
+        position: relative;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    #mobel_field_1_13_1 h1 {
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #3C3C3C;
+        opacity: 1;
+        font-size: 24px;
+    }
+
+    #mobel_field_1_13_1 p {
+        grid-column-start: 2;
+        grid-column-end: 9;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        text-align: center;
+        font: normal normal normal 12px/20px Noto Sans CJK TC;
+        letter-spacing: 0.6px;
+        color: #727171;
+        opacity: 1;
+        font-size: 16px;
+    }
+
+    #mobel_field_1_14_2 {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobel_field_1_14_2 img,
+    #mobel_field_1_15_3 img {
+        height: 30px;
+    }
+
+    #mobel_field_1_14_2 span,
+    #mobel_field_1_13_3 span {
+        text-align: center;
+        letter-spacing: 2px;
+        color: #3C3C3C;
+        opacity: 1;
+        font-size: 22px;
+        font-weight: 600;
+        padding-left: 8px;
+    }
+
+    #field_1_52 {
+        display: none;
+    }
+
+    #input_1_1 li label,
+    #input_1_63 li label {
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    #label_1_1_0,
+    #label_1_1_1 {
+        min-width: 20vw;
+        min-height: 17vh;
+        max-height: 150px;
+    }
+
+    /* 賞屋方式 */
+    #input_1_1 li label,
+    #input_1_63 li label {
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    #label_1_1_0,
+    #label_1_1_1 {
+        min-width: 20vw;
+        min-height: 17vh;
+        max-height: 150px;
+    }
+
+    /* 賞屋方式 */
+    #label_1_1_0 {
+        background-image: url(../images/illus_live_appreciation_default.svg);
+    }
+
+    #label_1_1_0:hover,
+    #input_1_1 input:active+#label_1_1_0,
+    #input_1_1 input:checked+#label_1_1_0 {
+        background-image: url(../images/illus_live_appreciation_active.svg);
+    }
+
+    #label_1_1_0.error {
+        background-image: url(../images/illus_live_appreciation_error.svg);
+    }
+
+    #label_1_1_1 {
+        background-image: url(../images/illus_online_house_default.svg);
+    }
+
+    #label_1_1_1:hover,
+    #input_1_1 input:active+#label_1_1_1,
+    #input_1_1 input:checked+#label_1_1_1 {
+        background-image: url(../images/illus_online_house_active.svg);
+    }
+
+    #label_1_1_1.error {
+        background-image: url(../images/illus_online_house_error.svg);
+    }
+
+    /* #gform_fields_1 .gfield_required {
+        color: #727171 !important;
+    } */
+    /*
+     * GC_Chandler 2023-09-15
+     * 燈箱預約賞屋必填樣式
+     */
+    #gform_fields_1 .gfield_required {
+        display: -webkit-inline-box;
+        background: #E65959 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        opacity: 1;
+    }
+
+    .gc-required-font {
+        text-align: center;
+        font: normal normal normal 10px/14px Noto Sans TC;
+        color: #FFFFFF;
+        opacity: 1;
+        padding: 3px 8px;
+        font-size: x-small;
+    }
+
+    /*
+     * GC_Chandler 2023-09-15
+     * 燈箱預約賞屋選填樣式 
+     */
+    #gform_fields_1 .gc-optional-span {
+        display: -webkit-inline-box;
+        background: #5C7498 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        opacity: 1;
+    }
+
+    .gc-optional-font {
+        text-align: center;
+        font: normal normal normal 10px/14px Noto Sans TC;
+        color: #FFFFFF;
+        opacity: 1;
+        padding: 3px 8px;
+        font-size: x-small;
+    }
+
+    #gform_fields_1 li label {
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    #input_1_1 {
+        text-align: center;
+        display: grid;
+        /* grid-template-columns: repeat(11, 1fr); */
+        grid-template-rows: 100%;
+    }
+
+    #input_1_1 .gchoice_1_1_0 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    #input_1_1 .gchoice_1_1_1 {
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    #input_1_1 input {
+        display: none;
+    }
+
+    #field_1_69.hide,
+    #field_1_70.hide {
+        display: none !important;
+    }
+
+    #field_1_82.show,
+    #field_1_83.show,
+    #field_1_84.show,
+    #field_1_85.show,
+    #field_1_86.show,
+    #field_1_87.show {
+        display: block !important;
+        margin-top: 0px !important;
+    }
+
+    #field_1_63 {
+        margin-bottom: 48px;
+    }
+
+    #field_1_1 .ginput_container.ginput_container_radio {
+        align-items: center;
+    }
+
+    #field_1_21 {
+        display: none;
+    }
+
+    #input_1_63,
+    #input_1_38,
+    #input_1_11,
+    #input_1_4,
+    .form-control,
+    #input_1_69,
+    #input_1_70,
+    #input_1_6,
+    #input_1_43,
+    #input_1_45,
+    #input_1_7,
+    #input_1_9,
+    #input_1_76,
+    #input_1_82,
+    #input_1_83,
+    #input_1_84,
+    #input_1_85,
+    #input_1_86,
+    #input_1_88,
+    #input_1_90 {
+        border: 1px solid #707070;
+        border-radius: 8px;
+        opacity: 1;
+        height: 48px;
+        min-width: 77%;
+        padding-left: 15px !important;
+        background-color: #ffffff;
+    }
+
+    #input_1_77,
+    #input_1_78 {
+        border: 1px solid #707070;
+        border-radius: 8px;
+        opacity: 1;
+        height: 48px;
+        min-width: 95.5%;
+        padding-left: 15px !important;
+        background-color: #ffffff;
+    }
+
+    .gc_custom_button_div {
+        display: flex;
+    }
+
+    #gc_custom_button {
+        min-width: 100px;
+        background: #354762 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: smaller;
+        min-height: 40px;
+    }
+
+    #gc_custom_button_span {
+        text-align: left;
+        letter-spacing: 0.7px;
+        color: #727171;
+        opacity: 1;
+        font-size: 12px;
+    }
+
+    .form-group:first-child {
+        margin-bottom: 20px;
+    }
+
+    #gc_custom_approve_button,
+    #gc_custom_retransmit_code,
+    #gc_custom_login_button {
+        background: #354762 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        text-align: center;
+        min-height: 40px;
+        color: #FFFFFF;
+        opacity: 1;
+
+    }
+
+    #form1_date_first_selector,
+    #form1_date_second_selector {
+        border-radius: 10px;
+        height: 48px;
+        padding-left: 14px;
+        border-color: #707070;
+        width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        justify-content: left;
+
+    }
+
+    #form1_date_first_img,
+    #form1_date_second_img {
+        display: none;
+    }
+
+    .btn-wrp {
+        min-width: 100%;
+        min-height: 48px;
+
+    }
+
+    .gc_date_div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #field_1_62 {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+    }
+
+    #gform_1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #gform_submit_button_1 {
+        background: #BD9D5D 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+        min-height: 40px;
+        width: 100% !important;
+    }
+
+    /*
+     * 修改其選擇器
+     */
+    /* #field_1_72,
+    #field_1_73 {
+        display: inline-grid;
+        width: 50%;
+        margin-right: 10px;
+    } */
+
+    #field_1_72 label,
+    #field_1_73 label {
+        position: relative;
+        top: -6px;
+    }
+
+    /* #field_1_77,
+    #field_1_78 {
+        display: inline-grid;
+        position: relative;
+        width: 45%;
+        min-width: 120px;
+    } */
+
+    /* GC_Chandler:2021-11-23 */
+    #field_1_77 .ginput_container,
+    #field_1_78 .ginput_container {
+        margin-top: 0;
+    }
+
+    /* 圖片 */
+    #field_1_13_1_img,
+    #field_1_14_2_img,
+    #field_1_15_3_img {
+        display: none;
+    }
+
+    /* GC_Chandler:2021-11-23 */
+    .gc_message.gc_success {
+        display: flex;
+    }
+
+    #field_1_6 span.gc-optional-span,
+    #field_1_77 span.gc-optional-span {
+        margin-left: 4px;
+    }
+
+    /*修改預約賞屋打勾的間距*/
+    #field_1_56 {
+        margin-top: 0;
+    }
+
+    #field_1_56 .ginput_container.ginput_container_checkbox {
+        margin-top: 0;
+    }
+
+    #label_1_56_1 {
+        vertical-align: top;
+    }
+
+    body #gform_wrapper_1 .gform_body .gform_fields .gfield .gfield_checkbox li.gchoice_1_56_1 input {
+        width: 20px !important;
+    }
+
+    #label_1_56_1 {
+        font-size: 16px !important;
+        line-height: 1;
+    }
+
+    /*修改 "賞屋時間" label 間距*/
+    #field_1_15 {
+        padding: 12px 0 0 0;
+    }
+    #field_1_73{
+        margin: 0;
+    }
+}
