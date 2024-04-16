@@ -1,0 +1,24 @@
+/*
+Theme Name: flatsome-child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.5
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
+
+.acf-switch{
+	 background-color:#0d99d5 !important;
+	 color:white !important;
+}
+.hide {
+  height: 0;
+}
