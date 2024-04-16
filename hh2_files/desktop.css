@@ -1,0 +1,1596 @@
+@media only screen and (min-width: 769px) {
+    #gform_1 {
+        max-width: 842.5px;
+    }
+
+    #gform_1 .gform_title {
+        border-bottom: 10px solid #354762;
+        width: 120px;
+        font-size: 30px;
+        margin-left: 26px;
+    }
+
+    /* placeholder css */
+    ::placeholder {
+        /* CSS 3 標準 */
+        color: gray;
+        font-size: 16px;
+        padding-left: 5px;
+    }
+
+    /* 賞屋方式 */
+    #field_1_1 #input_1_1 li label {
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 150px;
+        height: 130px;
+    }
+
+    /*GC_Chandler:2021-12-01 修改圖片選擇方式*/
+    #label_1_1_0 {
+        background-image: url(../images/illus_live_appreciation_default.svg);
+    }
+
+    #label_1_1_0:hover,
+    #input_1_1 input:active+#label_1_1_0,
+    #input_1_1 input:checked+#label_1_1_0 {
+        background-image: url(../images/illus_live_appreciation_active.svg);
+    }
+
+    #label_1_1_0.error {
+        background-image: url(../images/illus_live_appreciation_error.svg);
+    }
+
+    #label_1_1_1 {
+        background-image: url(../images/illus_online_house_default.svg);
+    }
+
+    #label_1_1_1:hover,
+    #input_1_1 input:active+#label_1_1_1,
+    #input_1_1 input:checked+#label_1_1_1 {
+        background-image: url(../images/illus_online_house_active.svg);
+    }
+
+    #label_1_1_1.error {
+        background-image: url(../images/illus_online_house_error.svg);
+    }
+
+    /* #gform_fields_1 .gfield_required {
+        color: #727171 !important;
+    } */
+    /*
+     * GC_Chandler 2023-09-15
+     * 燈箱預約賞屋必填樣式
+     */
+     #gform_fields_1 .gfield_required {
+        display: -webkit-inline-box;
+        background: #E65959 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        opacity: 1;
+    }
+    .gc-required-font {
+        text-align: center;
+        font: normal normal normal 10px/14px Noto Sans TC;
+        color: #FFFFFF;
+        opacity: 1;
+        padding: 3px 8px;
+        font-size: x-small;
+    }
+    /*
+     * GC_Chandler 2023-09-15
+     * 燈箱預約賞屋選填樣式 
+     */
+     #gform_fields_1 .gc-optional-span{
+        display: -webkit-inline-box;
+        background: #5C7498 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        opacity: 1;
+        margin-left: 4px !important;
+    }
+    .gc-optional-font{
+        text-align: center;
+        font: normal normal normal 10px/14px Noto Sans TC;
+        color: #FFFFFF;
+        opacity: 1;
+        padding: 3px 8px;
+        font-size: x-small;
+    }
+
+    /* 開始排版 */
+    #gform_fields_1 {
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        grid-auto-rows: 110px;
+        position: relative;
+    }
+
+    /* 賞屋資訊 */
+    #field_1_13 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: 174px;
+    }
+
+    #field_1_1 {
+        grid-column-start: 2;
+        grid-column-end: 9;
+        grid-row-start: 1;
+    }
+
+    #input_1_1 {
+        display: flex;
+    }
+
+    #gform_fields_1 #input_1_1 input {
+        display: none;
+    }
+
+    #field_1_62 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        position: relative;
+        top: -30px;
+        color: #E85E5E;
+        font-weight: bold;
+    }
+
+    /* 指定建案 */
+    #field_1_63 {
+        grid-column-start: 2;
+        grid-column-end: 16;
+        grid-row-start: 3;
+    }
+
+    #input_1_63 {
+        width: 100% !important;
+        border-radius: 10px;
+        color: #727171;
+    }
+
+    /* 基本資訊 */
+    #field_1_14 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+
+    /* 國碼 */
+    #field_1_76 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 4;
+    }
+
+    #input_1_76 {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* 手機號碼 */
+    #field_1_38 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 4;
+    }
+
+    #input_1_38 {
+        width: 100% !important;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    /* 手機認證 */
+    #field_1_39 {
+        grid-column-start: 9;
+        grid-column-end: 16;
+        grid-row-start: 4;
+    }
+
+    .gc_custom_button_div {
+        display: flex;
+    }
+
+    #gform_1 #gc_custom_button {
+        background-color: #354762;
+        /* width: 106px; */
+        color: white;
+        border-radius: 10px;
+        height: 45px;
+        position: relative;
+        top: 36px;
+    }
+
+    #gform_1 #gc_custom_button_span {
+        font-size: 12px;
+        position: relative;
+        top: 43px;
+        color: #E85E5E;
+        width: 150px;
+    }
+
+    #gform_1 .gc_custom_button_div2 {
+        display: flex;
+    }
+
+    /* 輸入簡訊 */
+    #input_1_43 {
+        width: 100% !important;
+        border-radius: 10px;
+
+    }
+
+    /* 認證 */
+    #gform_1 #gc_custom_approve_button {
+        background-color: #354762;
+        width: 100px;
+        color: white;
+        border-radius: 10px;
+        height: 45px;
+        position: relative;
+        top: 36px;
+    }
+
+    /* 重新取得驗證碼 */
+    #gform_1 #gc_custom_retransmit_code {
+        /* #354762 */
+        background-color: #354762;
+        width: 235px;
+        color: white;
+        border-radius: 10px;
+        height: 45px;
+        position: relative;
+        top: 40px;
+    }
+
+    #input_1_45 {
+        width: 100% !important;
+        border-radius: 10px;
+    }
+
+    #gform_1 #gc_custom_login_button {
+        background-color: #354762;
+        min-width: 108px;
+        color: white;
+        border-radius: 10px;
+        height: 45px;
+        position: relative;
+        top: 40px;
+    }
+
+    /* 姓氏 */
+    #field_1_11 {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    /* 名字 */
+    #field_1_88 {
+        grid-column-start: 7;
+        grid-column-end: 12;
+        grid-row-start: 5;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    #input_1_11,
+    #input_1_88 {
+        width: 100% !important;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    /* 性別 */
+    #field_1_4 {
+        grid-column-start: 12;
+        grid-column-end: 16;
+        grid-row-start: 5;
+        width: 100% !important;
+        margin-top: 8px;
+    }
+
+    #input_1_4 {
+        width: 100% !important;
+        border-radius: 10px;
+        color: #727171;
+    }
+
+    #field_1_21 {
+        display: none;
+    }
+
+    /* 居住地 */
+    #field_1_69 {
+        grid-column-start: 2;
+        grid-column-end: 9;
+        grid-row-start: 6;
+        width: 100%;
+    }
+
+    #input_1_69 {
+        width: 100%;
+        border-radius: 10px;
+        color: #727171;
+    }
+
+    #field_1_70 {
+        grid-column-start: 9;
+        grid-column-end: 16;
+        grid-row-start: 6;
+
+    }
+
+    #input_1_70 {
+        width: 100%;
+        border-radius: 10px;
+        color: #727171;
+    }
+
+    /* email */
+    #field_1_6.up {
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+
+    #field_1_6 {
+        grid-column-start: 2;
+        grid-column-end: 16;
+        grid-row-start: 6;
+        position: relative;
+        top: -20px;
+    }
+
+    #input_1_6 {
+        width: 100% !important;
+        border-radius: 10px;
+        padding-left: 10px;
+        color: #727171;
+    }
+    /* LineID GC_Chandler 2003-09-15 */
+    #field_1_90 {
+        grid-column-start: 2;
+        grid-column-end: 16;
+        grid-row-start: 7;
+        position: relative;
+        top: -20px;
+    }
+    #input_1_90 {
+        width: 100% !important;
+        border-radius: 10px;
+        padding-left: 10px;
+        color: #727171;
+    }
+    /* 賞屋時間 */
+    #field_1_15 {
+        grid-column-start: 1;
+        grid-row-start: 8;
+    }
+
+    #field_1_15.down {
+        grid-row-start: 12;
+    }
+
+    #field_1_52 {
+        grid-column-start: 2;
+        grid-column-end: 14;
+        grid-row-start: 8;
+        width: 100%;
+    }
+
+    #field_1_52.down {
+        grid-row-start: 12;
+    }
+
+    /* 第一時間 */
+    #field_1_7 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 9;
+        position: relative;
+        top: -60px;
+        width: 75% !important;
+    }
+
+    #input_1_7 {
+        width: 84%;
+        border-radius: 10px;
+    }
+
+    #field_1_72 {
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 9;
+        position: relative;
+        top: -50px;
+        /* width: 75% !important; */
+    }
+
+    #field_1_72.down {
+        grid-row-start: 13;
+    }
+
+    #field_1_72 label,
+    #field_1_73 label {
+        position: relative;
+        top: -6px
+    }
+
+    .btn-wrp {
+        width: 100%;
+    }
+
+    #form1_date_first_img,
+    #form1_date_second_img {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 0px 10px 10px 0px;
+        position: relative;
+        padding: 8px
+    }
+
+    #field_1_77 {
+        grid-column-start: 10;
+        grid-column-end: 16;
+        grid-row-start: 9;
+        position: relative;
+        top: -55px;
+        margin-top: 8px;
+    }
+
+    #field_1_77.down {
+        grid-row-start: 13;
+    }
+
+    /* 第二時間 */
+    #field_1_9 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 10;
+        position: relative;
+        top: -60px;
+        width: 75% !important;
+    }
+
+    #input_1_9 {
+        width: 84%;
+        border-radius: 10px;
+    }
+
+    #field_1_73 {
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 10;
+        position: relative;
+        top: -50px;
+        /* width: 75% !important; */
+    }
+
+    #field_1_73.down {
+        grid-row-start: 14;
+    }
+
+    #form1_date_second_selector {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #field_1_78 {
+        grid-column-start: 10;
+        grid-column-end: 16;
+        grid-row-start: 10;
+        position: relative;
+        top: -55px;
+        margin-top: 8px;
+    }
+
+    #field_1_78.down {
+        grid-row-start: 14;
+    }
+
+    #input_1_77,
+    #input_1_78 {
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
+        color: #727171;
+    }
+
+    /* 小日曆 */
+    #gform_fields_1 .ginput_container.ginput_container_date img {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 0px 10px 10px 0px;
+        position: relative;
+        left: 10px;
+    }
+
+    #field_1_56 {
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 11;
+        position: relative;
+        top: -90px;
+    }
+
+    #field_1_56.down {
+        grid-row-start: 15;
+    }
+
+    #field_1_56 .gchoice_1_56_1 input {
+        width: 20px !important;
+    }
+
+    #gform_1 #gform_submit_button_1 {
+        width: 78% !important;
+        height: 57px;
+        left: 86px;
+        border-radius: 10px;
+        top: -90px;
+    }
+
+    .gc_date_div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6px!important;
+    }
+
+    #form1_date_first_img,
+    #form1_date_second_img {
+        position: relative;
+        right: 23%;
+    }
+
+    #form1_date_first_selector,
+    #form1_date_second_selector {
+        background: transparent;
+        padding: 10px;
+        border-radius: 10px;
+        color: #727171;
+    }
+
+    #form1_date_first_selector::-webkit-calendar-picker-indicator,
+    #form1_date_second_selector::-webkit-calendar-picker-indicator {
+        right: -10px;
+        position: absolute;
+        width: 50px;
+        height: 40px;
+        color: rgba(204, 204, 204, 0);
+        opacity: 0
+    }
+
+    #form1_date_first_selector::-webkit-inner-spin-button,
+    #form1_date_second_selector::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    #form1_date_first_selector::-webkit-clear-button #form1_date_second_selector::-webkit-clear-button {
+        margin-right: 75px;
+    }
+
+    .btn-wrp {
+        z-index: 10;
+        display: inline-block;
+        width: 77%;
+        position: relative;
+    }
+
+    #field_1_69.hide,
+    #field_1_70.hide {
+        display: none !important;
+    }
+
+    #field_1_82.show,
+    #field_1_83.show,
+    #field_1_84.show,
+    #field_1_85.show,
+    #field_1_86.show,
+    #field_1_87.show {
+        display: block !important;
+        margin-top: 0px !important;
+    }
+
+    /* 新增公司行號 */
+    #field_1_82 {
+        grid-column-start: 2;
+        grid-column-end: 9;
+        grid-row-start: 7;
+        width: 100%;
+    }
+
+    #input_1_82 {
+        width: 100% !important;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    /* 新增公司電話 */
+    #field_1_83 {
+        grid-column-start: 9;
+        grid-column-end: 16;
+        grid-row-start: 7;
+        width: 100%;
+    }
+
+    #input_1_83 {
+        width: 100% !important;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    /* 類型需求 */
+    #field_1_84 {
+        grid-column-start: 2;
+        grid-column-end: 9;
+        grid-row-start: 8;
+        width: 100%;
+    }
+
+    #input_1_84 {
+        width: 100% !important;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    /* 新增公司電話 */
+    #field_1_85 {
+        grid-column-start: 9;
+        grid-column-end: 16;
+        grid-row-start: 8;
+        width: 100%;
+    }
+
+    #input_1_85 {
+        width: 100% !important;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    /* 坪數需求 */
+    #field_1_86 {
+        grid-column-start: 2;
+        grid-column-end: 9;
+        grid-row-start: 9;
+        width: 100%;
+    }
+
+    #input_1_86 {
+        width: 100% !important;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    /*備註*/
+    #field_1_87 {
+        grid-column-start: 2;
+        grid-column-end: 16;
+        grid-row-start: 10;
+        position: relative;
+        top: -10px;
+    }
+
+    #input_1_87 {
+        width: 100% !important;
+        border-radius: 10px;
+        padding-left: 10px;
+        color: #727171;
+    }
+}
+
+.field_1_43_class {
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 5;
+}
+
+.field_1_47_class {
+    grid-column-start: 9;
+    grid-column-end: 16;
+    grid-row-start: 5;
+}
+
+.field_1_45_class {
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 5;
+}
+
+.field_1_46_class {
+    grid-column-start: 9;
+    grid-column-end: 16;
+    grid-row-start: 5;
+}
+
+.grid_row_start_6 {
+    grid-row-start: 6 !important;
+}
+
+.grid_row_start_7 {
+    grid-row-start: 7 !important;
+}
+
+.grid_row_start_8 {
+    grid-row-start: 8 !important;
+}
+
+.grid_row_start_9 {
+    grid-row-start: 9 !important;
+}
+
+.grid_row_start_10 {
+    grid-row-start: 10 !important;
+}
+
+.grid_row_start_11 {
+    grid-row-start: 11 !important;
+}
+
+.grid_row_start_12 {
+    grid-row-start: 12 !important;
+}
+
+/* 隱藏標頭 */
+
+#gform_1 .gform_heading {
+    visibility: hidden;
+}
+
+#gform_1 .form-group select {
+    border-color: black;
+}
+
+#gform_1 .ui-datepicker-trigger {
+    padding: 10px;
+}
+
+.gfield_label {
+    text-align: left;
+    font: normal normal normal 20px/30px Noto Sans CJK TC;
+    letter-spacing: 1px;
+    color: #727171;
+    opacity: 1;
+}
+
+.form-group select {
+    padding-left: 10px !important;
+}
+
+.ginput_container.ginput_container_text input {
+    font: normal normal normal 16px/60px Noto Sans CJK TC;
+    letter-spacing: 0.8px;
+    color: #727171;
+    opacity: 1;
+}
+
+.ginput_container.ginput_container_select select {
+    padding-left: 10px !important;
+}
+
+/*GC_minos:2021-07-21以下是form6*/
+@media only screen and (min-width: 769px) {
+
+    #gform_fields_6 li label,
+    #gform_fields_6_2 li label,
+    #gform_fields_6_3 li label {
+        text-align: left;
+        /* font: normal normal medium 20px/30px Noto Sans CJK TC; */
+        letter-spacing: 1px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    #gform_fields_6 li div input {
+        text-align: left;
+        /* font: normal normal medium 20px/30px Noto Sans CJK TC; */
+        letter-spacing: 1px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    /* 賞屋方式 */
+    #input_6_1 li label {
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 150px;
+        height: 130px;
+    }
+
+    #label_6_1_0 {
+        background-image: url(../images/illus_live_appreciation_default.svg);
+    }
+
+    #label_6_1_0:hover,
+    #input_6_1 input:active+#label_6_1_0,
+    #input_6_1 input:checked+#label_6_1_0 {
+        background-image: url(../images/illus_live_appreciation_active.svg);
+    }
+
+    #label_6_1_0.error {
+        background-image: url(../images/illus_live_appreciation_error.svg);
+    }
+
+    #label_6_1_1 {
+        background-image: url(../images/illus_online_house_default.svg);
+    }
+
+    #label_6_1_1:hover,
+    #input_6_1 input:active+#label_6_1_1,
+    #input_6_1 input:checked+#label_6_1_1 {
+        background-image: url(../images/illus_online_house_active.svg);
+    }
+
+    #label_6_1_1.error {
+        background-image: url(../images/illus_online_house_error.svg);
+    }
+
+    /* #gform_fields_6 .gfield_required {
+        color: #727171 !important;
+    } */
+    /*
+     * GC_Chandler 2023-09-15
+     * 燈箱預約賞屋必填樣式
+     */
+    #gform_fields_6 .gfield_required,
+    #gform_fields_6_2 .gfield_required,
+    #gform_page_6_3 .gc-optional-span{
+        display: -webkit-inline-box;
+        background: #E65959 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        opacity: 1;
+    }
+    .gc-required-font{
+        text-align: center;
+        font: normal normal normal 10px/14px Noto Sans TC;
+        color: #FFFFFF;
+        opacity: 1;
+        padding: 3px 8px;
+        font-size: x-small;
+    }
+    /*
+     * GC_Chandler 2023-09-15
+     * 燈箱預約賞屋選填樣式 
+     */
+    #gform_fields_6 .gc-optional-span,
+    #gform_fields_6_2 .gc-optional-span,
+    #gform_page_6_3 .gc-optional-span{
+        display: -webkit-inline-box;
+        background: #5C7498 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        opacity: 1;
+        margin-left: 4px !important;
+    }
+    .gc-optional-font{
+        text-align: center;
+        font: normal normal normal 10px/14px Noto Sans TC;
+        color: #FFFFFF;
+        opacity: 1;
+        padding: 3px 8px;
+        font-size: x-small;
+    }
+
+    #input_6_1 {
+        display: flex;
+    }
+
+    #input_6_1 input {
+        display: none;
+    }
+
+    /* 開始排版 */
+    #gform_fields_6 {
+        display: grid;
+        grid-template-columns: 200px 110px 355px 360px;
+        grid-auto-rows: 30px 100px 190px 100px;
+        position: relative;
+    }
+
+    /* 1號標籤 */
+    #field_6_13 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    #field_6_71 {
+        width: 100%;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    #field_6_71 h1 {
+        margin-left: 180px;
+        text-align: left;
+        letter-spacing: 3px;
+        color: #3C3C3C;
+        opacity: 1;
+    }
+
+    #field_6_72 {
+        width: 100%;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    #field_6_72 span {
+        margin-left: 177px;
+        text-align: left;
+        letter-spacing: 0.8px;
+        color: #727171;
+        opacity: 1;
+        position: relative;
+        top: -80px;
+        font-size: 16px;
+    }
+
+    #field_6_1 .ginput_container {
+        margin: 0;
+    }
+
+    /* 選擇賞屋方式 */
+    #field_6_1 {
+        grid-column-start: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    /* 指定建案 */
+    #field_6_63 {
+        grid-column-start: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    #input_6_63 {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        opacity: 1;
+        padding-left: 10px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    #gc-next-btn,
+    #gform_next_button_6_64 {
+        background: #BC9C61 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+        position: relative;
+        right: 120px;
+        color: #fff;
+    }
+
+    #gc-next-btn {
+        right: 115px;
+    }
+
+    #field_6_66 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    #gform_page_6_1 .gform_page_footer {
+        border-top: 0;
+        margin: 50px 0;
+    }
+
+    #gform_next_button_6_64,
+    #gform_next_button_6_65 {
+        left: -9999px;
+    }
+
+    #gc-next-btn,
+    #gform_previous_button_6_65,
+    #gform_next_button_6_65 {
+        float: right;
+        width: 135px;
+        height: 50px;
+    }
+
+    /* page 2 */
+    #gform_fields_6_2 {
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        grid-auto-rows: 30px 100px 100px 100px 100px 100px 100px;
+        position: relative;
+    }
+
+    #gform_fields_6_2.expand {
+        grid-auto-rows: 30px 100px 100px 100px 100px 100px 100px 100px;
+    }
+
+    /* number 2 */
+    #field_6_14 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+    /* 國碼 */
+    #field_6_76 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    #input_6_76 {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* 手機 */
+    #field_6_38 {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    #input_6_38 {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        opacity: 1;
+        padding-left: 10px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    /* 圖片 */
+    #mobel_field_1_13_1,
+    #mobel_field_1_14_2,
+    #mobel_field_1_15_3 {
+        display: none;
+    }
+
+    /* 驗證手機 */
+    #field_6_39 {
+        grid-column-start: 10;
+        grid-column-end: 15;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    #gform_6 .gc_custom_button_div {
+        position: relative;
+        top: 35px;
+    }
+
+    #gform_6 #gc_custom_button_form6 {
+        background-color: #354762;
+        /* width: 106px; */
+        color: white;
+        border-radius: 10px;
+        height: 50px;
+        width: 160px;
+    }
+
+    /* 認證 */
+    #gform_6 #gc_custom_approve_button_form6 {
+        background-color: #354762;
+        width: 100px;
+        color: white;
+        border-radius: 10px;
+        height: 45px;
+        position: relative;
+        top: 40px;
+    }
+
+    /* 重新認證 */
+    #gform_6 #gc_custom_retransmit_code_form6 {
+        /* #354762 */
+        background-color: #354762;
+        width: 235px;
+        color: white;
+        border-radius: 10px;
+        height: 45px;
+        position: relative;
+        top: 40px;
+    }
+
+    /* 登入 */
+    #gform_6 #gc_custom_login_button_form6 {
+        background-color: #354762;
+        min-width: 108px;
+        color: white;
+        border-radius: 10px;
+        height: 45px;
+        position: relative;
+        top: 40px;
+    }
+
+    #input_6_43,
+    #input_6_45 {
+        width: 100%;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+
+    /* 姓氏 */
+    #field_6_11 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    /* 100 名字 */
+    #field_6_100 {
+        grid-column-start: 9;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    /* 95 類型需求*/
+    #field_6_95 {
+        grid-column-start: 5;
+        grid-column-end: 10;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+    /* 96 租買需求*/
+    #field_6_96 {
+        grid-column-start: 10;
+        grid-column-end: 15;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+    /* 98 坪數需求*/
+    #field_6_97 {
+        grid-column-start: 5;
+        grid-column-end: 10;
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+    /* 99 備註*/
+    #field_6_99 {
+        grid-column-start: 10;
+        grid-column-end: 15;
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+
+    #input_6_99 {
+        max-height: 40px !important;
+        min-height: 40px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+    }
+
+    #input_6_93,
+    #input_6_94,
+    #input_6_11,
+    #input_6_100 {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        opacity: 1;
+        padding-left: 10px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    /* 性別 */
+    #field_6_4 {
+        grid-column-start: 13;
+        grid-column-end: 15;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    #input_6_4 {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        opacity: 1;
+        padding-left: 10px;
+        color: #727171;
+    }
+
+    /* 69 居住地 */
+    #field_6_69 {
+        grid-column-start: 5;
+        grid-column-end: 10;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    /* 70 區域*/
+    #field_6_70 {
+        grid-column-start: 10;
+        grid-column-end: 15;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    /* 93 公司行號 */
+    #field_6_93{
+        grid-column-start: 5;
+        grid-column-end: 10;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    /* 94 市內電話 */
+    #field_6_94{
+        grid-column-start: 10;
+        grid-column-end: 15;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    
+    #input_6_69 {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        opacity: 1;
+        padding-left: 10px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    #input_6_70 {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        opacity: 1;
+        padding-left: 10px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    #field_6_21 {
+        display: none;
+    }
+    /* 6 Email*/
+    #field_6_6 {
+        grid-column-start: 5;
+        grid-column-end: 15;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    /* 102 Line ID*/
+    #field_6_102 {
+        grid-column-start: 5;
+        grid-column-end: 15;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+
+    #input_6_95,
+    #input_6_96,
+    #input_6_97,
+    #input_6_6,
+    #input_6_102 {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        opacity: 1;
+        padding-left: 10px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    .gform_wrapper .top_label .gfield_label {
+        /*line-height:.5!important;*/
+    }
+
+    /* 圖片 */
+    #field_6_67 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+
+    #gform_page_6_2 .gform_page_footer {
+        border-top: 0;
+        margin: 60px 0;
+    }
+
+    #gform_page_6_2 .gform_page_footer {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: 50px;
+        position: relative;
+        width: 92%;
+    }
+
+    #gform_previous_button_6_65,
+    #gform_previous_button_6 {
+        grid-column-start: 6;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        background: #BC9C61 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+    }
+
+    #gc-next-btn-65,
+    #gform_next_button_6_65 {
+        color: #fff;
+        grid-column-start: 7;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        background: #BC9C61 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+    }
+
+    /* page 3 */
+    #gform_fields_6_3.expand {
+        grid-auto-rows: 50px 90px 90px 90px 90px 90px 90px;
+    }
+
+    #gform_fields_6_3 {
+        display: grid;
+        grid-template-columns: 200px 100px 350px 40px 350px;
+        grid-auto-rows: 30px 90px 90px 90px 90px 90px 90px;
+        position: relative;
+    }
+
+    #field_6_52 {
+        grid-column-start: 3;
+        grid-column-end: 8;
+        width: 100%;
+    }
+
+    /* #field_6_7 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    } */
+    #field_6_74 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        position: relative;
+    }
+
+    #form6_date_first_img,
+    #form6_date_second_img {
+        background-color: #BC9C61;
+        height: 40px !important;
+        width: 40px !important;
+        margin-bottom: 15px;
+        padding: 8px;
+        border-radius: 0px 10px 10px 0px;
+        position: relative;
+        right: 40px;
+    }
+
+    #form6_date_first_selector,
+    #form6_date_second_selector {
+        width: 100%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        opacity: 1;
+        padding-left: 10px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    #form6_date_first_selector,
+    #form6_date_second_selector {
+        background: transparent;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #form6_date_first_selector::-webkit-calendar-picker-indicator,
+    #form6_date_second_selector::-webkit-calendar-picker-indicator {
+        right: -10px;
+        position: absolute;
+        width: 50px;
+        height: 40px;
+        color: rgba(204, 204, 204, 0);
+        opacity: 0
+    }
+
+    #form6_date_first_selector::-webkit-inner-spin-button,
+    #form6_date_second_selector::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    #form6_date_first_selector::-webkit-clear-button #form6_date_second_selector::-webkit-clear-button {
+        margin-right: 75px;
+    }
+
+    /* #field_6_9 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    } */
+    #field_6_73 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        top: 40px;
+        position: relative;
+    }
+
+    .form6_btn-wrp {
+        width: 100%;
+        z-index: 10;
+        display: inline-block;
+        position: relative;
+    }
+
+    #field_6_77 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        margin-top: 10px;
+    }
+
+    #field_6_78 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        margin-top: 10px;
+    }
+
+    #field_6_56 {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+
+    #input_6_77,
+    #input_6_78 {
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
+        text-align: left;
+        color: #727171;
+        opacity: 1;
+        border-width: 1px;
+    }
+
+    /* 圖片 */
+    #field_6_68 {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+
+    #gform_page_6_3 .gform_page_footer {
+        border-top: 0;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: 20px;
+        position: relative;
+        width: 90%;
+    }
+
+    #gform_previous_button_6 {
+        grid-column-start: 7;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 55px;
+        width: 100%;
+        top: -50px;
+    }
+
+    #gform_submit_button_6 {
+        grid-column-start: 3;
+        grid-column-end: 8;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        background: #BC9C61 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+        width: 100%;
+        height: 55px;
+    }
+
+    #field_6_52 span {
+        text-align: center;
+        font: normal normal normal 16px/60px Noto Sans CJK TC;
+        letter-spacing: 0.8px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    #input_6_56 .gchoice_6_56_1 input {
+        margin-top: 0px;
+        text-align: left;
+        font: normal normal normal 16px/60px Noto Sans CJK TC;
+        letter-spacing: 1.6px;
+        color: #727171;
+        opacity: 1;
+    }
+
+    .gform_confirmation_wrapper_6 {
+        position: relative;
+        left: 35%;
+        top: 35%;
+    }
+}
+
+.field_6_45_class,
+.field_6_43_class {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 3;
+}
+
+.field_6_46_class,
+.field_6_47_class {
+    grid-column-start: 10;
+    grid-column-end: 16;
+    grid-row-start: 3;
+}
+
+.form6_grid_row_start_3 {
+    grid-row-start: 3 !important;
+    grid-row-end: 3 !important;
+}
+
+.form6_grid_row_start_4 {
+    grid-row-start: 4 !important;
+    grid-row-end: 4 !important;
+}
+
+.form6_grid_row_start_5 {
+    grid-row-start: 5 !important;
+    grid-row-end: 5 !important;
+}
+
+.form6_grid_row_start_6 {
+    grid-row-start: 6 !important;
+    grid-row-end: 6 !important;
+}
+
+.form6_grid_row_start_7 {
+    grid-row-start: 7 !important;
+    grid-row-end: 7 !important;
+}
+
+.form6_grid_row_start_8 {
+    grid-row-start: 8 !important;
+    grid-row-end: 8 !important;
+}
+
+.form6_grid_row_start_9 {
+    grid-row-start: 9 !important;
+    grid-row-end: 9 !important;
+}
+
+.form6_grid_row_start_10 {
+    grid-row-start: 10 !important;
+    grid-row-end: 10 !important;
+}
+.form6_grid_row_start_11 {
+    grid-row-start: 11 !important;
+    grid-row-end: 11 !important;
+}

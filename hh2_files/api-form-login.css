@@ -1,0 +1,286 @@
+@media (max-width: 767px) {
+
+    button#forward_register,
+    button#forward_login {
+        width: 100% !important;
+    }
+
+    .privacy_description {
+        padding-top: 10px !important;
+    }
+
+    .elementor-kit-303 h3 {
+        font-size: 18px !important;
+    }
+
+    .login_top_area {
+        padding: 0 15px;
+    }
+
+    .gc-login-mfp-close {
+        display: none !important;
+    }
+}
+
+.border-dashed {
+    border: 1px dashed #222;
+    border-radius: 5px;
+}
+
+#check_privacy {
+    transform: scale(1.3);
+    margin: 0px 5px 0px 0px;
+}
+
+/* 
+GC_Chandler:2023-09-19 marked
+
+ul#form_tabs li {
+    display: inline-block;
+    width: 49%;
+    text-align: center !important;
+}
+
+ul#form_tabs li.second {
+    text-align: right;
+}
+
+ul#form_tabs li.ui-state-active a:after {
+    transform: scaleX(1);
+}
+
+ul#form_tabs li.ui-state-active a h3 {
+    font-weight: bold;
+} 
+
+ul#form_tabs li a h3 {
+    font-weight: 400;
+}
+
+ul#form_tabs li a {
+    display: inline-block;
+    width: auto;
+    padding-bottom: 5px;
+}
+*/
+
+button.woocommerce-Button.lost_password {
+    background-color: #354762;
+}
+
+button.gc_button {
+    transition: all .5s;
+    margin: 0px;
+}
+
+.forward_register a {
+    color: #354762;
+}
+
+.account-container #form_tabs {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.login_top_area #forward_login+.gc_message,
+.center,
+.extra_message,
+.extra_field {
+    text-align: center;
+}
+
+.extra_message {
+    margin: 10px 0 20px 0;
+}
+
+.privacy_description label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.lost_password_div,
+.register_code {
+    padding-top: 20px;
+}
+
+#open_lost_password {
+    font-size: 14px;
+}
+
+.login_top_area .col,
+.account-register-inner .col {
+    padding: 0 5px;
+}
+
+.account-login-inner .row,
+.account-register-inner .row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.lightbox-content .lightbox-inner {
+    min-height: 620px;
+}
+
+#login-form-popup {
+    border-radius: 7px;
+}
+
+#login-form-popup.lightbox-content {
+    max-width: 620px !important;
+}
+
+.lost_password_area,
+.hide_input {
+    display: none;
+}
+
+.privacy_description {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.privacy_description a {
+    text-decoration: underline;
+}
+
+#user_login {
+    border-radius: 8px;
+}
+
+.low_padding {
+    padding: 0px 15px;
+}
+
+.woocommerce-LostPassword.lost_password {
+    margin-bottom: 20px;
+}
+
+#switch_register_tab,
+#close_lost_password,
+#open_lost_password {
+    display: inline-block;
+    color: #354762;
+}
+
+#open_lost_password {
+    margin-top: 15px;
+}
+
+#forward_register {
+    margin-top: 30px;
+}
+
+#close_lost_password {
+    margin: 20px 0px;
+}
+
+/*GC_Chandler:2023-09-20*/
+#customer_login label,
+.register_label label {
+    font-size: 16px;
+}
+
+.register_label label {
+    padding-left: 5px !important;
+}
+
+
+button#forward_register,
+button#forward_login {
+    width: 100%;
+}
+
+/*
+ * GC_Chandler:2023-09-19 login registration form style 
+ */
+
+.account-container #form_tabs {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+ul#form_tabs li{
+    flex: 1 1 0%;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    width: auto;
+}
+
+ul#form_tabs li a{
+    width: 100%;
+    list-style-type: none;
+    padding: 12px 8px;
+    border-bottom: 1px solid rgb(221, 223, 226);
+    margin-bottom: -1px;
+    justify-content: center;
+}
+
+ul#form_tabs li.ui-tabs-active a{
+    border-bottom: 2px solid #354762;
+    margin-bottom: -2px;
+}
+
+ul#form_tabs li a h3 {
+    color: rgb(221, 223, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul#form_tabs li.ui-tabs-active a h3 {
+    color: #354762;
+}
+
+.loader {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 9999;
+    text-align: center;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: 4px solid #3498db;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+/* 隐藏加载动画 */
+.loaded .loader {
+    display: none;
+}
+
+/* 還不是好友的文字距離 */
+.extra_field {
+    margin: 25px;
+}
+/*登入、註冊 必填選填*/
+.gc-required-font-login{
+    text-align: center;
+    font: normal normal normal 10px/14px Noto Sans TC;
+    color: #FFFFFF;
+    padding: 3px 8px;
+    font-size: x-small;
+    display: -webkit-inline-box;
+    background: #E65959 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+}
